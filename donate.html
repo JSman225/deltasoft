@@ -77,7 +77,28 @@
                     <div class="formbg">
                       <div class="formbg-inner padding-horizontal--48">
                         <span class="padding-bottom--15">Sign in to your account</span>
-                        <form id="stripe-login">
+                        <form id="stripe-login" onsubmit="checkCaptcha()">
+                            <script>
+                                function checkCaptcha(){
+                                    var isCaptchaValidated = false;
+var response = grecaptcha.getResponse();
+if(response.length == 0) {
+    isCaptchaValidated = false;
+    toast('Please verify that you are a Human.');
+    alert('Please verify that you are a Human.');
+} else {
+    isCaptchaValidated = true;
+}
+
+
+if (isCaptchaValidated ) {
+    return true;
+}else{
+    return false;
+}
+                                }
+                               
+                            </script>
                           <div class="field padding-bottom--24">
                             <label style="display: inline-block;" for="Discord Tag">Your Discord Tag (for example, <span style="text-align:left;" class="span-blue">JSman225#5860</span>)</label>
                             <input type="text" pattern=".+#\d{4}" name="Discord Tag" placeholder="Example: JSman225#5860"/>
