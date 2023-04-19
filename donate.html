@@ -7,35 +7,6 @@
     <link rel="stylesheet" href="donate\donate.css">
     <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function checkCaptcha(){
-            var isCaptchaValidated = false;
-var response = grecaptcha.getResponse();
-if(response.length == 0) {
-isCaptchaValidated = false;
-toast('Please verify that you are a Human.');
-alert('Please verify that you are a Human.');
-} else {
-isCaptchaValidated = true;
-}
-
-
-if (isCaptchaValidated ) {
-return true;
-}else{
-return false;
-}
-        }
-       
-    </script>
-    <script type="text/javascript">
-        var onloadCallback = function() {
-          grecaptcha.render('html_element', {
-            'sitekey' : '6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR'
-          });
-        };
-      </script>-->
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -88,8 +59,13 @@ return false;
                     <div>
                         <span class="temp-class-1">DONATE TO DELTASOFT AI</span>
                         <h1>Donate to help us keep <b style="color:#298AFC;">Deltasoft AI</b> online</h1>
-                        <p class="temp-class-2">Sorry, but it looks like the page you are looking for no longer exists.</p>
+                        <p class="temp-class-2">By contributing your API key you are helping us keep Deltasoft AI online and availible for everyone!</p>
                     </div>
+                    <br>
+                    <p onclick="window.open('https://www.onmsft.com/how-to/how-to-get-an-openai-api-key/', '_blank').focus();" style="color:#298AFC; font-size:20px;" class="pointer"><b>What's an OpenAI API Key?</b></p>
+                    <div class="temp-class-3">
+                      <p>Safe & Secure · No personal information required</p>
+                  </div>
                 </div>
             </div>
             <div class="content">
@@ -97,7 +73,7 @@ return false;
                 <div class="formbg-outer">
                     <div class="formbg">
                       <div class="formbg-inner padding-horizontal--48">
-                        <span name="donate" class="padding-bottom--15">Sign in to your account</span>
+                        <span name="donate" class="padding-bottom--15">Donate to Deltasoft AI</span>
                         <form id="Dontate Form" name="Donate Form"  data-netlify="true">
                           <div class="field padding-bottom--24">
                             <label style="display: inline-block;" for="Discord Tag">Your Discord Tag (for example, <span style="text-align:left;" class="span-blue">JSman225#5860</span>)</label>
@@ -107,7 +83,7 @@ return false;
                             <div class="grid--50-50">
                               <label for="password">OpenAI API Key</label>
                               <div class="reset-pass">
-                                <a href="#">How do I find this?</a>
+                                <a href="https://www.onmsft.com/how-to/how-to-get-an-openai-api-key/" target="_blank">How do I find this?</a>
                               </div>
                             </div>
                             <input type="password" name="password" placeholder="Copy & Paste Here" required>
@@ -117,8 +93,7 @@ return false;
                               <input type="checkbox" name="anonymous"> Make this donation anonymous 🙏
                             </label>
                           </div>
-                          <!--<div class="g-recaptcha" data-sitekey="6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR"></div>-->
-                          <div style="margin-top:24px;" class="field">
+                          <div style="margin-top:10px;" class="field">
                             <input type="submit" value="Donate 💖">
                           </div>
                         </form>
