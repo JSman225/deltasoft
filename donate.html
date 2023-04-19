@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="donate\donate.css">
     <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         function checkCaptcha(){
             var isCaptchaValidated = false;
@@ -35,7 +35,7 @@ return false;
             'sitekey' : '6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR'
           });
         };
-      </script>
+      </script>-->
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -98,7 +98,7 @@ return false;
                     <div class="formbg">
                       <div class="formbg-inner padding-horizontal--48">
                         <span name="donate" class="padding-bottom--15">Sign in to your account</span>
-                        <form id="stripe-login" onsubmit="checkCaptcha()" netlify>
+                        <form id="Dontate Form" name="Donate Form"  method="POST" data-netlify="true" data-netlify-recaptcha="true">
                           <div class="field padding-bottom--24">
                             <label style="display: inline-block;" for="Discord Tag">Your Discord Tag (for example, <span style="text-align:left;" class="span-blue">JSman225#5860</span>)</label>
                             <input type="text" pattern=".+#\d{4}" name="Discord Tag" placeholder="Example: JSman225#5860"/>
@@ -117,7 +117,8 @@ return false;
                               <input type="checkbox" name="anonymous"> Make this donation anonymous 🙏
                             </label>
                           </div>
-                          <div class="g-recaptcha" data-sitekey="6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR"></div>
+                          <!--<div class="g-recaptcha" data-sitekey="6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR"></div>-->
+                          <div data-netlify-recaptcha="true"></div>
                           <div style="margin-top:24px;" class="field">
                             <input type="submit" name="submit" value="Continue">
                           </div>
