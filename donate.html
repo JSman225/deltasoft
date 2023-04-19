@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donate\donate.css">
+    <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR'
+          });
+        };
+      </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#181a1d">
+    <title>Donate :) 💖</title>
+</head>
+<body>
+    
+<div id="menu" class="menu-overlay hidden">
+    <div class="content-container">
+
+    </div>
+</div>
+<header id="navbar" class="navbar">
+    <div class="navbar-container">
+        <div style="justify-content: left;" class="navbar-content">
+            <img class="navbar-logo" src="assets/logo.svg">
+        </div>
+        <nav class="navbar-content-nav">
+            <ul class="navbar-content-nav-menu">
+                <li class="pointer">
+                    <a>Products<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li class="pointer">
+                    <a>Solutions<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li class="pointer">
+                    <a>Pricing</a>
+                </li>
+                <li class="pointer">
+                    <a>Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbar-content">
+            <div class="navbar-button-container">
+                <button onclick="window.open('https://discord.gg/v65X6AHt25', '_blank').focus();" class="navbar-signup-button pointer">DISCOVER NOW</button>
+                <img onclick="menu()" style="transform: scaleX(-1); display: none;" class="menu pointer" src="assets/Menu.svg">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section-1">
+        <div class="content-container">
+            <div class="content title">
+                <div>
+                    <div>
+                        <span class="temp-class-1">DONATE TO DELTASOFT AI</span>
+                        <h1>Donate to help us keep <b style="color:#298AFC;">Deltasoft AI</b> online</h1>
+                        <p class="temp-class-2">Sorry, but it looks like the page you are looking for no longer exists.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="form-start">
+                <div class="formbg-outer">
+                    <div class="formbg">
+                      <div class="formbg-inner padding-horizontal--48">
+                        <span class="padding-bottom--15">Sign in to your account</span>
+                        <form id="stripe-login">
+                          <div class="field padding-bottom--24">
+                            <label style="display: inline-block;" for="Discord Tag">Your Discord Tag (for example, <span style="text-align:left;" class="span-blue">JSman225#5860</span>)</label>
+                            <input type="text" pattern=".+#\d{4}" name="Discord Tag" placeholder="JSman225#5860"/>
+                          </div>
+                          <div class="field padding-bottom--24">
+                            <div class="grid--50-50">
+                              <label for="password">OpenAI API Key</label>
+                              <div class="reset-pass">
+                                <a href="#">How do I find this?</a>
+                              </div>
+                            </div>
+                            <input type="password" name="password">
+                          </div>
+                          <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                            <label for="checkbox">
+                              <input type="checkbox" name="checkbox"> Make this donation anonymous 🙏
+                            </label>
+                          </div>
+                          <div class="g-recaptcha" data-sitekey="6LdnO5wlAAAAABAXDvx9krnUr29UtKXO4owrRTIR"></div>
+                          <div style="margin-top:24px;" class="field">
+                            <input type="submit" name="submit" value="Continue">
+                          </div>
+                        </form>
+                        
+                      </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
