@@ -26,7 +26,7 @@
     top: 0;
     width:100vw;
     height:100vh;
-    background-color:#298AFC;
+    background-color:#181A1D;
     z-index: 9999;
     overflow:hidden;
     display: flex;
@@ -36,10 +36,48 @@
     
 }
 .menu-overlay .content-container{
-    background-color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     width:95%;
     height:95%;
 }
+
+.menu-overlay .fancyText {
+    background-color:#298AFC;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-overlay .fancyText:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-overlay .fancyText:hover {
+   background-position: 0;
+  }
+  
+  .menu-overlay .fancyText:hover::before{
+    width: 100%;
+  }
+
+
+
 .hidden{
     display:none;
 }

@@ -11,9 +11,8 @@ function arrow(){
         behavior: "smooth"
     });
 }
-
+var open = false;
 function menu(){
-    var open = false;
     if (!open){
         disableScroll();
         document.getElementById('menu').classList.remove("hidden");
@@ -21,7 +20,7 @@ function menu(){
     }
     else{
         enableScroll();
-        document.getElementById('menu').classList.remove("hidden");
+        document.getElementById('menu').classList.add("hidden");
         open = false;
     }
 }

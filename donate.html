@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="donate\donate.css">
+    <script src="js/new.js"></script>
     <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -19,37 +20,42 @@
     
 <div id="menu" class="menu-overlay hidden">
     <div class="content-container">
-
+      <div class="content-container">
+        <h1 class="fancyText pointer">How To Use</h1>
+        <br>
+        <h1 class="fancyText pointer">Community</h1>
+        <br>
+        <h1 class="fancyText pointer">Donate</h1>
+        <br>
+        <i onclick="menu()" class="pointer fa-solid fa-xmark fa-2xl"></i>
+    </div>
     </div>
 </div>
 <header id="navbar" class="navbar">
-    <div class="navbar-container">
-        <div style="justify-content: left;" class="navbar-content">
-            <img class="navbar-logo" src="assets/logo.svg">
-        </div>
-        <nav class="navbar-content-nav">
-            <ul class="navbar-content-nav-menu">
-                <li class="pointer">
-                    <a>Products<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
-                </li>
-                <li class="pointer">
-                    <a>Solutions<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
-                </li>
-                <li class="pointer">
-                    <a>Pricing</a>
-                </li>
-                <li class="pointer">
-                    <a>Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="navbar-content">
-            <div class="navbar-button-container">
-                <button onclick="window.open('https://discord.gg/v65X6AHt25', '_blank').focus();" class="navbar-signup-button pointer">DISCOVER NOW</button>
-                <img onclick="menu()" style="transform: scaleX(-1); display: none;" class="menu pointer" src="assets/Menu.svg">
-            </div>
-        </div>
-    </div>
+  <div class="navbar-container">
+      <div style="justify-content: left;" class="navbar-content">
+          <img onclick="window.location.replace('https://deltasoft-ai.netlify.app')" class="navbar-logo pointer" src="assets/logo.svg">
+      </div>
+      <nav class="navbar-content-nav">
+          <ul class="navbar-content-nav-menu">
+              <li class="pointer">
+                  <a>How To Use<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li class="pointer">
+                  <a>Community<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li class="pointer">
+                  <a onclick="window.location.replace('https://deltasoft-ai.netlify.app/donate')">Donate 💖</a>
+              </li>
+          </ul>
+      </nav>
+      <div class="navbar-content">
+          <div class="navbar-button-container">
+              <button onclick="window.open('https://discord.gg/v65X6AHt25', '_blank').focus();" class="navbar-signup-button pointer">DISCOVER NOW</button>
+              <img onclick="menu()" style="transform: scaleX(-1); display: none;" class="menu pointer" src="assets/Menu.svg">
+          </div>
+      </div>
+  </div>
 </header>
 <main>
     <section class="section-1">
