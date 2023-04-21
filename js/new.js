@@ -24,10 +24,9 @@ function menu(){
         open = false;
     }
 }
-
-
-
-
+function showDropdown(){
+  alert('test');
+}
 
 
 /*/////////////////////////////
