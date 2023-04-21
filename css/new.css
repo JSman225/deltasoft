@@ -146,10 +146,16 @@ button{
     margin:0;
     padding:0;
     width: 390px;
+    height:100%;
 }
 nav li{
     all: unset;
     color:white;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-button-container{
     display: flex;
@@ -182,9 +188,12 @@ nav li{
     letter-spacing: 1px;
 }
 
-
+.dropdown-block:hover .dropdown-container{
+    display: flex !important;
+}
 
 .dropdown-container{
+    transition: all .2;
     position:absolute;
     top:80px;
     margin-left: auto;
@@ -195,6 +204,7 @@ nav li{
     background-color:white;
     width:700px;
     height:260px;
+    display: none;
     border-radius:15px;
     justify-content: center;
     align-items: center;
