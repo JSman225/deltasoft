@@ -12,6 +12,7 @@ h1 {
 /* ---------------------------------- */
  html, body {
 	 background: #182952;
+font-family: 'Plus Jakarta Sans', sans-serif;
 }
  body {
 	 color: rgba(255, 255, 255, .2);
@@ -22,3 +23,25 @@ h1 {
 	 overflow: hidden;
 }
  
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300&display=swap');
+* {
+    scrollbar-width: .5vw;
+    scrollbar-color: #298AFC rgba(219, 219, 220, 0);
+    transition: all .2s;
+    scroll-behavior: smooth;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: .5vw;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(219, 219, 220, 0);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #298AFC;
+    border-radius: .5vw;
+  }
