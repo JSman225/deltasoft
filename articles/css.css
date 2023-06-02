@@ -22,7 +22,9 @@ font-family: 'Plus Jakarta Sans', sans-serif;
 	 margin: auto;
 	 overflow: hidden;
 }
- 
+ p{
+	 color:white;
+}
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300&display=swap');
 * {
